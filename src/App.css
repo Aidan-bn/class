@@ -1,6 +1,5 @@
 header {
-    height: 15vh;
-    /* border: 1px solid #f2f2f2; */
+    height: 10vh;
     width: 85vw;
     display: flex;
     align-items: center;
@@ -9,14 +8,16 @@ header {
 }
 
 a {
-    /* color: #f2f2f2; */
-    color: #bb0c0c;
+    color: #f2f2f2;
     text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 2px solid yellow;
 }
 
 nav {
     display: flex;
-    /* border-bottom: 2px solid #c60808; */
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
@@ -44,7 +45,8 @@ nav > h2 {
 .contents {
     background-color: #f2f2f2;
     color: rgb(45, 42, 42);
-    height: 80vh;
+    display: flex;
+    align-items: center;
 }
 
 .contents > main {
@@ -52,6 +54,38 @@ nav > h2 {
     margin: auto;
 }
 
+.main-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-page > p > span {
+    display: block;
+    font-size: 35px;
+    padding-bottom: 48px;
+    font-family: pacifico;
+}
+
+.main-page > p {
+    text-align: justify;
+    padding-right: 280px;
+}
+
+.main-page > p > button {
+    color: #d1f603;
+    background: rgb(45, 42, 42);
+    padding: 10px 12px;
+    margin: 40px 0px;
+    font-size: large;
+    border: 0;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.img-student {
+    width: 400px;
+}
 
 /* the footer section goes here */
 .footer {
@@ -82,4 +116,72 @@ nav > h2 {
     width: 30px;
     cursor: pointer;
     fill: #d1f603;
+}
+
+/* start a register page  */
+.register {
+    position: fixed;
+    top: 12vh;
+    left: 7%;
+    height: 78%;
+    width: 25vw;
+    background-color: rgba(226, 229, 229);
+    /* display: none; */
+    padding: 10px 15px;
+    color: #2d2a2a;
+}
+
+.register > h3 {
+    padding: 15px 0;
+}
+
+.form-label, input {
+    display: block;
+    width: 100%;
+    padding: 6px;
+    margin: 4px 0;
+    outline: 0;
+}
+
+legend {
+    padding: 2px;
+    margin: 8px;
+}
+
+.form-label, legend {
+    font-weight: 700;
+}
+
+.radios {
+    display: inline-flex;
+    margin: 4px;
+    gap: 5px;
+}
+
+.submit {
+    display: block;
+    margin: 20px auto;
+    /* margin: 4px; */
+    color: #f2f2f2;
+    background-color: #2d2a2a;
+    padding: 7px 40px;
+    font-size: 20px;
+    border: 0;
+}
+
+.p-login {
+    text-align: center;
+    padding: 25px;
+}
+
+/* start of primary rendering */
+.primary {
+    height: 80vh;
+    background-color: #f2f2f2;
+    color: #2d2a2a;
+}
+
+.div-primary {
+    width: 85vw;
+    margin: auto;
 }

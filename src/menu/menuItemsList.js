@@ -7,7 +7,7 @@ export const menuItems = [
     {
         title: 'Primary',
         url: '/primary',
-        list: [
+        submenu: [
             {
                 title: 'Sample Paper',
                 url: 'Competence',
@@ -56,7 +56,7 @@ export const menuItems = [
     },
     {
         title: 'Remote Teacher',
-        url: '/remote',
+        url: '/teacher',
         list: [
             {
                 title: 'Sample Paper',

@@ -5,10 +5,10 @@ const MenuItemsDropdown = (menus) => {
     return(
         <>
             <li>
-                {menus.list ? (
+                { item.list ? (
                     <>
                         <button type="button" aria-haspopup="menu">
-                            {menus.title}
+                            {item.title}
                         </button>
                         <Dropdown submenus={menus.list} />
                     </>

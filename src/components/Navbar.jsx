@@ -1,16 +1,25 @@
 import { menuItems } from '../menu/menuItemsList';
-//import MenuItemsDropdown from './MenuItemsDropdown';
-import MenuItems from './MenuItems';
+//import { Link } from 'react-router-dom';
+//import Dropdown from './Dropdown';
+//import MenuItems from './MenuItems';
+//import MenuItems from './MenuItems';
 
 const Navbar = () => {
   return (
     <>
         <nav>
             <menu>
-                {menuItems.map((item, index) => 
-                    {
-                        return <MenuItems menus={item} key={index} />;
-                    }
+                {menuItems.map((item) => 
+                    <a href={item.url} key="index">{item.title}</a>
+                       //{
+                        // item.list ? (
+                        //     <a href='#' key="index">{item.title}</a>
+                        // ):(
+                        //     <a href={item.url}>{item.title}</a>
+                        // )
+                    //    <a href='#'>{item.title}</a>
+                        // return <MenuItems menu={item} key={index} />
+                  // }
                 )}
             </menu>
             <h2>
