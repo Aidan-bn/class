@@ -8,23 +8,25 @@ import Olevel from './components/Olevel'
 import Alevel from './components/Alevel'
 import Teacher from './components/Teacher'
 import Others from './components/Others'
+import Login from './components/Login'
 
 function App() {
 
   return (
     <>
-    <BrowserRouter>
-      <Nav />
-      <Routes>
-        <Route path='/' element={<Content />} />
-        <Route path='/primary' element={<Primary />} />
-        <Route path='/olevel' element={<Olevel />} />
-        <Route path='/advanced' element={<Alevel />} />
-        <Route path='/teacher' element={<Teacher />} />
-        <Route path='/others' element={<Others />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+      <BrowserRouter>
+        <Nav />
+        <Routes>
+          <Route path='/' element={<Content />} />
+          <Route path='/primary' element={<Primary />} />
+          <Route path='/olevel' element={<Olevel />} />
+          <Route path='/advanced' element={<Alevel />} />
+          <Route path='/teacher' element={<Teacher />} />
+          <Route path='/others' element={<Others />} />
+          <Route path='/login' element={<Login />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </>
   )
 }

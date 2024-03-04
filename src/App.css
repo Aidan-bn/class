@@ -70,6 +70,7 @@ nav > h2 {
 .main-page > p {
     text-align: justify;
     padding-right: 280px;
+    width: 60%;
 }
 
 .main-page > p > button {
@@ -126,6 +127,7 @@ nav > h2 {
     height: 78%;
     width: 25vw;
     background-color: rgba(226, 229, 229);
+    /* hide registration */
     /* display: none; */
     padding: 10px 15px;
     color: #2d2a2a;
@@ -172,6 +174,14 @@ legend {
 .p-login {
     text-align: center;
     padding: 25px;
+}
+
+.p-login > strong > a {
+    color: #1b0a0a;
+}
+
+.p-login > strong > a:hover {
+    border-bottom: 2px solid #1b0a0a;
 }
 
 /* start of primary rendering */
