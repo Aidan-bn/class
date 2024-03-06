@@ -27,6 +27,11 @@ const Teacher = () => {
                     </li>
                   )}
                 </menu>
+                <p>
+                  You can create an account now 
+                  to receive offers <br />
+                  <a href={'/'}>Register</a> | <a href={'/login'}>Log In</a>
+                </p>
               </aside>
               <aside>
                 {

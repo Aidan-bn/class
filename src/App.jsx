@@ -9,6 +9,7 @@ import Alevel from './components/Alevel'
 import Teacher from './components/Teacher'
 import Others from './components/Others'
 import Login from './components/Login'
+import Register from './components/Register'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
           <Route path='/teacher' element={<Teacher />} />
           <Route path='/others' element={<Others />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/register' element={<Register />} />
         </Routes>
         <Footer />
       </BrowserRouter>
