@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { menuItems } from '../menu/menuItemsList';
 //import { Link } from 'react-router-dom';
 //import Dropdown from './Dropdown';
@@ -10,7 +11,7 @@ const Navbar = () => {
         <nav>
             <menu>
                 {menuItems.map((item) => 
-                    <a href={item.url} key="index">{item.title}</a>
+                    <Link to={item.url} key="index">{item.title}</Link>
                        //{
                         // item.list ? (
                         //     <a href='#' key="index">{item.title}</a>

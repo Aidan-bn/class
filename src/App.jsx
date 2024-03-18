@@ -10,6 +10,7 @@ import Teacher from './components/Teacher'
 import Others from './components/Others'
 import Login from './components/Login'
 import Register from './components/Register'
+import PrimaryCatalogue from './components/PrimaryCatalogue'
 
 function App() {
 
@@ -26,6 +27,8 @@ function App() {
           <Route path='/others' element={<Others />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
+          {/*Routes for Catalogue */}
+          <Route path='/primarycat' element={<PrimaryCatalogue />} /> 
         </Routes>
         <Footer />
       </BrowserRouter>

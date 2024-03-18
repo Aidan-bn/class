@@ -1,13 +1,16 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 import { classLists } from "../menu/classList";
-import pic  from "../assets/student.jpg";
+//import pic  from "../assets/student.jpg";
+//import TeacherCatalogue from "./TeacherCatalogue";
 
 const Teacher = () => {
-  const [ show, setShow ] = useState(true);
+  //const [ show, setShow ] = useState(true);
+  const [selectedIndex, setSelectedIndex] = useState(-1);
 
-  const switchContent = () => {
-    setShow((prev) => !prev)
-  }
+  // const switchContent = () => {
+  //   setShow((prev) => !prev);
+  // }
   
     return (
       <div className="primary ">
@@ -17,55 +20,35 @@ const Teacher = () => {
            <div className="main-primary">
               <aside>
                 <menu
-                  className="teacher-list">
-                  {classLists.map((list) => 
+                  className="teacher-list"
+                >
+                  {classLists.map((list, index) => 
                     <li 
                       key='id'
-                      onClick={switchContent}
+                      className={ selectedIndex === index ? 'active-link' : 'active'}
                       >
-                        {list.name}
+                        <Link 
+                          to={list.url} 
+                          key="index"
+                          onClick={() => {setSelectedIndex(index); }} 
+                        >
+                          {list.name}
+                        </Link>
                     </li>
                   )}
                 </menu>
                 <p>
                   You can create an account now 
                   to receive offers <br />
-                  <a href={'/'}>Register</a> | <a href={'/login'}>Log In</a>
+                  <Link to={'/'}>Register</Link> | <Link to={'/login'}>Log In</Link>
                 </p>
               </aside>
-              <aside>
+              {/* <aside>
                 {
                   show &&
-                  <div
-                    className="teacher-box"
-                    >
-                    {
-                      classLists.map((subject) =>
-                        <div 
-                          key='id' 
-                          className="teacher-details"
-                        >
-                          {/* <img src={subject.available.pic} alt="teacher-image" className="avatar" /> */}
-                          <img src={pic} alt="teacher-image" className="avatar" />
-                          <div 
-                            className="teacher-info"
-                          >
-                            <h5>{subject.available.name}</h5>
-                            <h5>{subject.available.subjects}</h5> 
-                            <h5>{subject.available.contact}</h5>
-                            <p>{subject.available.bio}</p>
-                            <button
-                              className="btn-booking"
-                              >
-                              Booking
-                            </button>
-                          </div>
-                        </div>
-                      )
-                    }
-                  </div>
+                  <TeacherCatalogue />
                 }
-              </aside>
+              </aside> */}
            </div>
           </div>
       </div>

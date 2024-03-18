@@ -2,7 +2,7 @@ export const classLists = [
     {
         id: 1,
         name: "Primary",
-        url: '/primary-teachers',
+        // url: '/primarycat',
         available: {
             name: 'Aidan Banteze',
             subjects: 'Maths, Physics',
@@ -14,7 +14,7 @@ export const classLists = [
     {
         id: 2,
         name: "Olevel",
-        url: '/olevel-teachers',
+        // url: '/olevel-teachers',
         available: {
             name: 'Aidan Banteze',
             subjects: 'Geography, Physics',
