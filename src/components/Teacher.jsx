@@ -1,24 +1,22 @@
 import { useState } from "react";
 import { Link } from 'react-router-dom';
 import { classLists } from "../menu/classList";
-//import pic  from "../assets/student.jpg";
-//import TeacherCatalogue from "./TeacherCatalogue";
+import TeacherCatalogue from "./TeacherCatalogue";
 
 const Teacher = () => {
-  //const [ show, setShow ] = useState(true);
+  const [show, setShow ] = useState(true);
   const [selectedIndex, setSelectedIndex] = useState(-1);
 
-  // const switchContent = () => {
-  //   setShow((prev) => !prev);
-  // }
+  const switchContent = () => {
+    setShow((prev) => !prev);
+  }
   
     return (
       <div className="primary ">
-        {/* center */}
           <div className="div-primary">
            <h1>Book a teacher</h1>
            <div className="main-primary">
-              <aside>
+              <aside className="space">
                 <menu
                   className="teacher-list"
                 >
@@ -31,6 +29,7 @@ const Teacher = () => {
                           to={list.url} 
                           key="index"
                           onClick={() => {setSelectedIndex(index); }} 
+                          onSelect={switchContent}
                         >
                           {list.name}
                         </Link>
@@ -43,17 +42,16 @@ const Teacher = () => {
                   <Link to={'/'}>Register</Link> | <Link to={'/login'}>Log In</Link>
                 </p>
               </aside>
-              {/* <aside>
+              <aside>
                 {
                   show &&
                   <TeacherCatalogue />
                 }
-              </aside> */}
+              </aside>
            </div>
           </div>
       </div>
     );
   }
-  
   export default Teacher;
   

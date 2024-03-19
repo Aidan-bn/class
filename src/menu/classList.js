@@ -6,7 +6,7 @@ export const classLists = [
         available: {
             name: 'Aidan Banteze',
             subjects: 'Maths, Physics',
-            pic: '../assets/student.jpg',
+            pic: '../public/student.png',
             contact: '075312220',
             bio: 'University Graduate '
         }
@@ -18,7 +18,7 @@ export const classLists = [
         available: {
             name: 'Aidan Banteze',
             subjects: 'Geography, Physics',
-            pic: './asset/img.jpg',
+            pic: '../../public/student1.jpg',
             contact: '075312220',
             bio: 'A University Graduate '
         }
@@ -27,27 +27,13 @@ export const classLists = [
         id: 3,
         name: "Alevel",
         url: '/alevel-teachers',
-        available: [
-            {
+        available: {
             name: 'Flavian Banteze',
             subjects: 'Maths, Chemistry',
-            pic: './asset/img1.jpg',
+            pic: '../../public/student.png',
             contact: '075312220',
             bio: 'A University Graduate '
-            },
-            {
-            name: 'Aidan Banteze',
-            subjects: 'Maths, Physics',
-            pic: './asset/img.jpg',
-            contact: '075312220'
-            },
-            {
-            name: 'Aidan Habayo',
-            subjects: 'ICT, Physics',
-            pic: './asset/img.jpg',
-            contact: '075312220'
             }
-        ]
     },
     {
         id: 4,
@@ -56,7 +42,7 @@ export const classLists = [
         available: {
             name: 'Aidan Banteze',
             subjects: 'Geography, Physics',
-            pic: './asset/img.jpg',
+            pic: '../../public/student1.jpg',
             contact: '075312220',
             bio: 'A University Graduate '
         }
@@ -68,10 +54,9 @@ export const classLists = [
         available: {
             name: 'Aidan Banteze',
             subjects: 'Geography, Physics',
-            pic: './asset/img.jpg',
+            pic: '../../public/student.png',
             contact: '075312220',
             bio: 'A University Graduate '
         }
     }
- 
 ]

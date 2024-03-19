@@ -20,6 +20,7 @@ a {
 .active-link {
     background-color: #d1f603;
     padding: 4px;
+    font-weight: 600;
 }
 
 a:hover {
@@ -156,6 +157,10 @@ nav > h2 {
 
 .teacher-list > li > a {
     color: #1b0a0a;
+}
+
+.space {
+    margin-right: 30px;
 }
 
 .teacher-details {

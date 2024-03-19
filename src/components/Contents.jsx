@@ -1,10 +1,11 @@
 import { useRef, useState } from 'react';
 import { useHideAndShow } from './useHideAndShow';
-import student from '../assets/student.png';
+import student from '/student.png';
 import Register from './Register';
 
 const Content = () => {
     const [overlay, setOverlay] = useState(false);
+    
     const handleClick = () => {
         setOverlay((prev) => !prev)
     };
@@ -16,7 +17,7 @@ const Content = () => {
         <>
             <div className="contents">
                 <main className='main-page'>
-                    <p ref={ref}>
+                    <p ref={ref}> 
                         <span>
                             Hello Students !
                         </span>
