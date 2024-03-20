@@ -326,3 +326,127 @@ legend {
 .login-div > p {
     padding: 8px 0;
 }
+
+.primary-page {
+    display: flex;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #d3d3d3;
+    color: #333;
+    padding: 20px;
+  }
+  
+  .sidebar h2 {
+    margin-top: 0;
+  }
+  s
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    color: #333;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar ul li a {
+    color: 333;
+    text-decoration: none;
+  }
+  
+  .sidebar ul li a:hover {
+    color: #ccc;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 30px;
+  }
+
+  .content ::after 
+  
+  .grades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    
+  }
+  
+  .grade {
+    width: 150px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: 333
+    padding: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+    {
+        padding: 15px;
+    }
+  }
+  
+  .grade h3 {
+    margin-top: 0;
+    cursor: pointer;
+  }
+  
+  .grade ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+  }
+  
+  .grade ul li {
+    margin-bottom: 5px;
+  }
+  
+  .grade ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .grade ul li a:hover {
+    color: #666;
+  }
+
+  .grades {
+    display:grid;
+    grid-template-columns: respect(3, 1fr;  
+    gap: 20px
+  }
+
+  .grade-container {
+    display: flex;
+    flex-basis: 100%;
+    gap: 20px;
+  }
+
+  .teacher-box {
+    width: 25%;
+  }
+
+  /* grade material */
+
+  .grade-material-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .download-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .download-button {
+    width: 100%;
+  }
